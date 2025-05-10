@@ -49,4 +49,8 @@ json_file_path = "firebase_key.json"
 Mahmut Balta
 
 GitHub Profilim
-
+vscode indirmek için https://youtu.be/XNywWHeIoZk?si=TSaWwupgJG2GcKKR
+dockers indirmek için https://youtu.be/d8OYQerJ8Yw?si=B0WQ9s4eWKCECegc
+git ve github kulanımı https://youtu.be/mgMISrVoAXw?si=vKPX-WSzXwE3U9DL
+LOG Dosyası Analizi https://youtu.be/XUCzkZqWexI?si=BlU43omthZ3V0KYT
+pythonun bilgisayara kurulumu https://youtu.be/hBQG_ovWaKk?si=A_nCl9Mk4iJfDk5i
