@@ -1,48 +1,52 @@
-# 🧾 Fatura Takip Sistemi
+# 🧾 Fatura Takip ve Yönetim Sistemi
 
-Bu proje, kullanıcıların fatura bilgilerini takip etmelerini ve ödemelerini yönetmelerini sağlar.
+Bu proje, bireylerin veya kurumların fatura takibini kolaylaştırmak amacıyla geliştirilmiş bir web uygulamasıdır.  
+FastAPI, Firebase ve Jinja2 template engine kullanılarak hazırlanmıştır.
+
+---
 
 ## 🚀 Özellikler
 
-- Kullanıcı Kaydı & Girişi
-- Fatura Ekleme & Görüntüleme
-- Ödeme Durumu Takibi
-- Admin Panel
-- Loglama ve Docker Desteği
-- PostgreSQL ile veritabanı bağlantısı
-- FastAPI & HTML arayüzü
+✅ Fatura ekleme (numara, tarih, kategori, tutar, durum)  
+✅ Firebase Realtime Database ile veri kaydı  
+✅ Kullanıcı bazlı fatura listeleme  
+✅ Fatura silme özelliği  
+✅ Otomatik son ödeme tarihi hesaplama (14 gün)  
+✅ Temiz, responsive HTML (Bootstrap 5 ile)
 
-## 📁 Proje Yapısı
+---
 
-faturatakip/
-├── app/
-│ ├── main.py
-│ ├── models.py
-│ ├── database.py
-│ ├── logging_config.py
-│ └── routes.py
-├── templates/
-├── .env
-├── Dockerfile
-├── requirements.txt
-└── README.md
+## 🖼️ Ekran Görüntüleri
 
-## 🐳 Docker ile Çalıştırma
+### 📥 Fatura Ekleme Formu
+![fatura-form](https://via.placeholder.com/600x300.png?text=Fatura+Ekleme+Ekrani)
 
-```bash
-docker build -t faturatakip .
-docker run -d -p 8000:8000 --name fatura-api faturatakip
-🌐 Uygulama URL'leri
-Kullanıcı Paneli: http://localhost:8000/panel
+### 📋 Faturalar Listesi
+![fatura-list](https://via.placeholder.com/600x300.png?text=Fatura+Liste+Ekrani)
 
-Swagger UI: http://localhost:8000/docs
+---
 
-👤 Geliştirici
-Mahmut Balta → GitHub
+## 🛠️ Kullanılan Teknolojiler
 
-#### 3. **Git ile GitHub'a gönderin:**
+| Katman        | Teknoloji             |
+|---------------|------------------------|
+| Backend       | FastAPI (Python)       |
+| Frontend      | HTML + Bootstrap       |
+| Veritabanı    | Firebase (Realtime DB) |
+| Loglama       | Python logging         |
+
+---
+
+## 📦 Kurulum
 
 ```bash
-git add README.md
-git commit -m "📄 README eklendi"
-git push origin main
+git clone https://github.com/kullaniciadi/faturatakip.git
+cd faturatakip
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+json_file_path = "firebase_key.json"
+👨‍🏫 Hazırlayan
+Mahmut Balta
+
+GitHub Profilim
+
